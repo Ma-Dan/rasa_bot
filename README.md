@@ -4,10 +4,11 @@
 1. Python 3
 2. TensorFlow 1.8.0
 3. Keras 2.2.2
-4. scikit-learn 0.19.1
-5. mitie 0.5.0 (安装方式：pip install git+https://github.com/mit-nlp/MITIE.git)
-6. rasa-nlu 0.13.1
-7. rasa-core 0.10.4
+4. jieba 0.39
+5. scikit-learn 0.19.1
+6. mitie 0.5.0 (安装方式：pip install git+https://github.com/mit-nlp/MITIE.git)
+7. rasa-nlu 0.13.1
+8. rasa-core 0.10.4
 
 ## 资料来源
 1. MITIE预训练词向量 来自：[https://github.com/crownpku/Rasa_NLU_Chi](https://github.com/crownpku/Rasa_NLU_Chi)
