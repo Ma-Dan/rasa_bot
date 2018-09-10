@@ -31,7 +31,7 @@
           {
             "start": 9,
             "end": 11,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           }
         ],
@@ -67,7 +67,7 @@
           {
             "start": 11,
             "end": 13,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           }
         ],
@@ -217,7 +217,7 @@
           {
             "start": 8,
             "end": 10,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           }
         ],
@@ -265,7 +265,7 @@
           {
             "start": 7,
             "end": 9,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           }
         ],
@@ -289,7 +289,7 @@
           {
             "start": 6,
             "end": 8,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           }
         ],
@@ -301,7 +301,7 @@
           {
             "start": 9,
             "end": 11,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -319,7 +319,7 @@
           {
             "start": 9,
             "end": 11,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -337,7 +337,7 @@
           {
             "start": 14,
             "end": 16,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -427,7 +427,7 @@
           {
             "start": 9,
             "end": 11,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -445,7 +445,7 @@
           {
             "start": 9,
             "end": 11,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -463,7 +463,7 @@
           {
             "start": 14,
             "end": 16,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -535,7 +535,7 @@
           {
             "start": 8,
             "end": 10,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -553,7 +553,7 @@
           {
             "start": 8,
             "end": 10,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -571,7 +571,7 @@
           {
             "start": 13,
             "end": 15,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -643,7 +643,7 @@
           {
             "start": 8,
             "end": 10,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -661,7 +661,7 @@
           {
             "start": 8,
             "end": 10,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -679,7 +679,7 @@
           {
             "start": 13,
             "end": 15,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -919,7 +919,7 @@
           {
             "start": 10,
             "end": 12,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -937,7 +937,7 @@
           {
             "start": 11,
             "end": 13,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -973,7 +973,7 @@
           {
             "start": 11,
             "end": 13,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -991,7 +991,7 @@
           {
             "start": 18,
             "end": 20,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -1009,7 +1009,7 @@
           {
             "start": 10,
             "end": 12,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           },
           {
@@ -1255,7 +1255,7 @@
           {
             "start": 0,
             "end": 2,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           }
         ],
@@ -1291,7 +1291,7 @@
           {
             "start": 1,
             "end": 3,
-            "value": "消费",
+            "value": "话费",
             "entity": "item"
           }
         ],
@@ -1761,9 +1761,8 @@
     "regex_features": [],
     "entity_synonyms": [
       {
-        "value": "消费",
+        "value": "话费",
         "synonyms": [
-          "话费",
           "钱"
         ]
       }

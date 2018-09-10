@@ -18,7 +18,7 @@ from rasa_core.policies.memoization import MemoizationPolicy
 
 logger = logging.getLogger(__name__)
 
-support_search = ["消费", "流量"]
+support_search = ["话费", "流量"]
 
 
 def extract_item(item):
@@ -49,7 +49,7 @@ class ActionSearchConsume(Action):
 
         time = tracker.get_slot("time")
         if time is None:
-            dispatcher.utter_message("您想查询哪个月的消费？")
+            dispatcher.utter_message("您想查询哪个月的话费？")
             return []
         # query database here using item and time as key. but you may normalize time format first.
         dispatcher.utter_message("好，请稍等")

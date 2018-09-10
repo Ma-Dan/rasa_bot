@@ -2,8 +2,8 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "item",
-        "time"
+        "time",
+        "item"
       ]
     },
     "utter_goodbye": {
