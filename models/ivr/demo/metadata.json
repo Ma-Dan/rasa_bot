@@ -2,54 +2,13 @@
     "language": "zh",
     "pipeline": [
         {
-            "model": "wordvector/total_word_feature_extractor.dat",
-            "name": "nlp_mitie",
-            "mitie_feature_extractor_fingerprint": 1140151576222497556,
-            "class": "rasa_nlu.utils.mitie_utils.MitieNLP"
-        },
-        {
-            "dictionary_path": null,
-            "name": "tokenizer_jieba",
-            "class": "rasa_nlu.tokenizers.jieba_tokenizer.JiebaTokenizer"
-        },
-        {
-            "name": "ner_mitie",
-            "classifier_file": "entity_extractor.dat",
-            "class": "rasa_nlu.extractors.mitie_entity_extractor.MitieEntityExtractor"
-        },
-        {
-            "name": "ner_synonyms",
-            "synonyms_file": "entity_synonyms.json",
-            "class": "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper"
-        },
-        {
-            "name": "intent_entity_featurizer_regex",
-            "regex_file": "regex_featurizer.json",
-            "class": "rasa_nlu.featurizers.regex_featurizer.RegexFeaturizer"
-        },
-        {
-            "name": "intent_featurizer_mitie",
-            "class": "rasa_nlu.featurizers.mitie_featurizer.MitieFeaturizer"
-        },
-        {
-            "C": [
-                1,
-                2,
-                5,
-                10,
-                20,
-                100
-            ],
-            "kernels": [
-                "linear"
-            ],
-            "max_cross_validation_folds": 5,
-            "name": "intent_classifier_sklearn",
-            "classifier_file": "intent_classifier_sklearn.pkl",
-            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
+            "model": "spacy/wiki_zh",
+            "case_sensitive": false,
+            "name": "nlp_spacy",
+            "class": "rasa_nlu.utils.spacy_utils.SpacyNLP"
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20180910-200900",
-    "rasa_nlu_version": "0.13.1"
+    "trained_at": "20181201-081257",
+    "rasa_nlu_version": "0.13.8"
 }

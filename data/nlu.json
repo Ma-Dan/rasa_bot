@@ -38,6 +38,18 @@
         ]
       },
       {
+        "text": "查话费",
+        "intent": "request_search",
+        "entities": [
+          {
+            "start": 1,
+            "end": 3,
+            "value": "话费",
+            "entity": "item"
+          }
+        ]
+      },
+      {
         "text": "帮我查一下我月租多少",
         "intent": "request_search",
         "entities": [
@@ -811,8 +823,8 @@
           },
           {
             "start": 5,
-            "end": 8,
-            "value": "这个月",
+            "end": 9,
+            "value": "这个月份",
             "entity": "time"
           }
         ]
@@ -1491,8 +1503,8 @@
         "intent": "request_management",
         "entities": [
           {
-            "start": 10,
-            "end": 12,
+            "start": 9,
+            "end": 11,
             "value": "流量",
             "entity": "item"
           },

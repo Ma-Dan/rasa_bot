@@ -5,20 +5,25 @@
 2. TensorFlow 1.8.0
 3. Keras 2.2.2
 4. jieba 0.39
-5. scikit-learn 0.19.1
-6. mitie 0.5.0 (安装方式：pip install git+https://github.com/mit-nlp/MITIE.git)
-7. rasa-nlu 0.13.1
-8. rasa-core 0.10.4
+5. msgpack 0.5.6
+6. scikit-learn 0.19.1
+7. sklearn_crfsuite 0.3.6
+8. spacy 2.0.17
+9. rasa-nlu 0.13.8
+10. rasa-core 0.10.4
 
 ## 资料来源
-1. MITIE预训练词向量，使用中文维基百科训练。
+1. FastText预训练词向量，wiki训练，有两个版本可以选择，这里选择wiki训练的尺寸较小的版本，下载地址[https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.vec](https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.vec)
 2. rasa-nlu和rasa-core示例配置和语料 来自：[https://github.com/zqhZY/_rasa_chatbot](https://github.com/zqhZY/_rasa_chatbot)
 这里仅整理为一个完整的包含NLU、Dialog训练和测试，ChatBot在线学习和使用的例子。
 
 ## 准备工作
 1. git clone https://github.com/Ma-Dan/rasa_bot
-2. 下载MITIE预训练词向量total_word_feature_extractor.dat，并放入rasa_bot/wordvector目录，下载链接：https://pan.baidu.com/s/1RvKKC5X1cd6oovMKEbInXg 密码: 81jn
-3. （可选）使用自己训练的MITIE词向量，方法：[http://blog.rubenxiao.com/posts/nlp-mitie.html](http://blog.rubenxiao.com/posts/nlp-mitie.html)
+2. 下载FastText预训练词向量[wiki.zh.vec](https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.vec)
+下载后运行下列命令准备词向量
+python -m spacy init-model zh rasr_bot/spacy/wiki_zh --vectors-loc wiki.zh.vec
+3. 当前版本rasa-nlu的jieba_tokenizer存在重复加载用户字典问题，使用[最新版](https://github.com/RasaHQ/rasa_nlu/raw/master/rasa_nlu/tokenizers/jieba_tokenizer.py)覆盖site-packages/rasa_nlu/tokenizers下的jieba_tokenizer.py
+3. （可选）使用自己训练的FastText词向量，或其他工具训练的词向量
 
 ## 训练和测试
 ### Rasa-NLU训练
